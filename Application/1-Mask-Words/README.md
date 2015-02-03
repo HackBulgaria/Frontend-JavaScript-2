@@ -28,7 +28,7 @@ Consider the following things:
 For example, if we have the following arguments:
 
 * `words = ["PHP"]`
-* `text = "We love coding in PHP!\nThis makes us really productive"
+* `text = "We love coding in PHP!\nThis makes us really productive"`
 
 The result is going to be:
 
@@ -38,8 +38,8 @@ The result is going to be:
 
 Another example will be:
 
-* `words = ["yesterday", "Dog", "food", "walk"]
-* `text = "Yesteday, I took my dog for a walk.\n It was crazy! My dog wanted only food."
+* `words = ["yesterday", "Dog", "food", "walk"]`
+* `text = "Yesteday, I took my dog for a walk.\n It was crazy! My dog wanted only food."`
 
 The result is going to be:
 

@@ -19,7 +19,7 @@ Can be represented by this table:
 
 We are going to use CSV files as tables and make a simple query language for fetching data.
 
-In a language of your choice, make a program that:
+**In a language of your choice, make a program that:**
 
 * Reads a CSV file.
 * Gives the user an interactive input for queries.
@@ -30,7 +30,7 @@ The queries, that should be supported are:
 * `SELECT [columns] LIMIT X` - where you can SELECT without giving the LIMIT. Then this will fetch all rows.
 * `SUM [column]` - returns the sum of all integers in the given column.
 * `SHOW` - returns a list of all column names in your data.
-* `FIND X` - returns all rows, that has `X` in some of their cells (Match X with at least one of the columns)
+* `FIND X` - returns all rows, that has `X` in some of their cells (Match X with at least one of the columns). **If `X` is a string, search for every string, that contains `X` as a substring.**
 
 Here are examples of all queries.
 
@@ -57,7 +57,9 @@ query>SELECT id
 |3 |
 |4 |
 |5 |
+```
 
+```
 query> SELECT id, name
 |id| name   |
 |--|--------| 
@@ -66,18 +68,26 @@ query> SELECT id, name
 |3 |Kiayada |
 |4 |Karly   |
 |5 |Igor    |
+```
 
+```
 query> SELECT id, name LIMIT 1
 |id| name   |
 |--|--------| 
 |1 |Kiara   |
+```
 
+```
 query> SUM id
 15
+```
 
+```
 query> SHOW
 id, name, hometown
+```
 
+```
 query> FIND "-"
 |id| name   | hometown          |
 |--|--------| ------------------|

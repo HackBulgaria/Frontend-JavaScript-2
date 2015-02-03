@@ -41,3 +41,7 @@ The `FileLogger` should log the messages to a given file.
 ## `HTTPLogger`
 
 The `HTTPLogger` shoud log the messages via a POST request to a given HTTP url.
+
+## Examples
+
+For each logger, make sure to include examples - scripts or tests that show how the logging works.
