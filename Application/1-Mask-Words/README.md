@@ -33,13 +33,13 @@ For example, if we have the following arguments:
 The result is going to be:
 
 ```
-"We love coding in ***!\nThis makes us really productie"
+"We love coding in ***!\nThis makes us really productive"
 ```
 
 Another example will be:
 
 * `words = ["yesterday", "Dog", "food", "walk"]`
-* `text = "Yesteday, I took my dog for a walk.\n It was crazy! My dog wanted only food."`
+* `text = "Yesterday, I took my dog for a walk.\n It was crazy! My dog wanted only food."`
 
 The result is going to be:
 
