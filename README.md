@@ -1,4 +1,5 @@
 # Frontend-JavaScript-2
+
 The second edition of the Frontend JavaScript course in HackBulgaria.
 
 ```
@@ -11,6 +12,15 @@ The second edition of the Frontend JavaScript course in HackBulgaria.
                                                     | |         
                                                     |_|         
 ```
+
+## Materials for prepartion
+
+We strongly recommend that you check the following materials:
+
+* Throughout the course we will use the following book - http://eloquentjavascript.net/
+* For the start of the course, **you can read from chapter 1 to chapter 4** - to get a good feeling of the language.
+* If you are into it, you can complete the JavaScript track in CodeCademy - http://www.codecademy.com/en/tracks/javascript
+
 
 ## Course Program
 
