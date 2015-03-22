@@ -1,0 +1,21 @@
+{
+  "name": "week1hangout",
+  "version": "0.0.9",
+  "description": "week 1 final project plus some stuff",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "jade",
+    "express",
+    "blog"
+  ],
+  "author": "Alex Milanov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2"
+  }
+}

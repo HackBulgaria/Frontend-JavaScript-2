@@ -1,0 +1,25 @@
+{
+  "name": "week1hangout",
+  "version": "0.0.9",
+  "authors": [
+    "Alex Milanov <alex@i4web.biz>"
+  ],
+  "description": "week 1 final project plus some stuff",
+  "main": "server.js",
+  "keywords": [
+    "jade",
+    "blog",
+    "express"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

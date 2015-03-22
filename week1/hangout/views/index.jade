@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    each post, id in posts
+        hr
+        article
+            a.title(href="/"+id+".html")= post.title
+            p.text= post.text

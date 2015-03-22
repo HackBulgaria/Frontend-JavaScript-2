@@ -1,0 +1,17 @@
+html
+  head
+    title Jade Blog
+    link(rel="stylesheet",type="text/css",href="css/style.css")
+  body
+    .container
+        header
+            a(href="/")
+                img(src="img/logo.png")
+        section
+            .sidebar
+                p.widget-title Category List
+                ul.widget-list
+                    li: a(href="/") Category1
+                    li: a(href="/") Category2
+            .content 
+                block content
