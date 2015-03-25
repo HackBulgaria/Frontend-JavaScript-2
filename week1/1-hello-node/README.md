@@ -1,7 +1,7 @@
 # Hello Node
 To start off let's create our directory structure and set up a new hello world project.
 
-## 1. Starting File Structure
+## Starting File Structure
 ```sh
 # in unix you can create it in 1 line:
 $ mkdir -p ~/Projects/frontendjs/week1/hello-node
@@ -23,7 +23,7 @@ The file structure should look something like this:
                 └── server.js
 ```
 
-## 2. Inits and Dependencies
+## Inits and Dependencies
 
 Let's init our configuration file and fetch the modules we need. 
 
@@ -43,7 +43,7 @@ Speaking of which our dependency for this project would be [express](http://www.
 $ npm install --save express
 ```
 
-## 3. Hello Express
+## Hello Express
 
 Open server.js and add the following code:
 
@@ -83,7 +83,7 @@ $ node server.js
 
 Nice we have running our first node server. Oh wait wasn't this a front-end course. 
 
-## 4. Go Public
+## Go Public
 
 With our example above we set up a server that prints out "Hello World" everytime someone opens the base url. In order to be able to serve different *static* files such as htmls, styles, images we eighter need to add another route for each or we can just use the middleware express graciously provided.
 
