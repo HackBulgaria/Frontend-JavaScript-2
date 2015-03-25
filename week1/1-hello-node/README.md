@@ -1,4 +1,4 @@
-# Hello Node
+# Week 1 Task 1: Hello Node
 To start off let's create our directory structure and set up a new hello world project.
 
 ## Starting File Structure
