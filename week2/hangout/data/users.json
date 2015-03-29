@@ -1,0 +1,17 @@
+[
+  {
+    "id": 123,
+    "name": "Alex",
+    "email": "alex@i4web.biz"
+  },
+  {
+    "id": "567",
+    "name": "Tosho",
+    "email": "tosho@test.com"
+  },
+  {
+    "id": "456",
+    "name": "Gosho",
+    "email": "iam@back.com"
+  }
+]
