@@ -48,5 +48,5 @@ p2.getZ() == 0; // true
 result.getZ() == -1; // true
 
 p2.toString() == "(0, 0, 0)" // true
-result.toString() == "(0, 0, 0)" // true
+result.toString() == "(0, 0, -1)" // true
 ```
