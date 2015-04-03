@@ -21,6 +21,8 @@ p.render() == "<p>Some text here</p>";
 
 `Div` will be a container and for the case, our only container.
 
+**The `addChild` method should return `this` in order to have chaining. Check the page example for more info.**
+
 Here is an example usage:
 
 ```javascript
@@ -148,4 +150,32 @@ table.render() ==
   </tbody>
 </table>
 "
+```
+
+## Rendering everything in a page
+
+We should have a `Page` class which takes a root element and reners everything from it.
+
+Here is an example:
+
+```javascript
+var p = new Paragraph("Rolling in the deep");
+var div = new Div();
+
+div
+  .addChild(new Div())
+  .addChild(new Div())
+  .addChild(p);
+
+var page = new Page(div);
+
+page.render() ==
+"
+<div>
+  <div></div>
+  <div></div>
+  <p>Rolling in the deep</p>
+</div>
+"
+
 ```
