@@ -22,6 +22,8 @@ It should have the following methods:
 
 ## An Event Queue
 
+**This is more "event bus" than "event queue"!** Use `{}` for implementation.
+
 Create a single object, that behaves like an event queue! We can attach custom events with callbacks to them and also trigger those events.
 
 The object should have the following __public__ methods:
