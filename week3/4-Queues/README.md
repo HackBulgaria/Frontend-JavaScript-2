@@ -1,4 +1,4 @@
-# A classic and an even queue
+# A classic and an event queue
 
 In a file called `queue.js` implement the following:
 
