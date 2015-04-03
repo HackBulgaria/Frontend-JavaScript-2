@@ -5,7 +5,7 @@ We are going to implement a set of different classes that takes data and renders
 We are going to combine that into a `Page` class, which will render the entire HTML.
 
 * Each class is going to have a common interface of the `render()` method, which returns a string, representing the rendered HTML.
-* Some of the classes are going to be containers, having an `addChild()` method - to add different components as their childs.
+* Some of the classes are going to be containers, having an `addChild()` method - to add different components as their children.
 * **Each level of nesting should be indented with 2 spaces!**
 
 ## The Paragraph class
