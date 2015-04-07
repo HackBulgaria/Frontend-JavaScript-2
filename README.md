@@ -13,8 +13,16 @@ The second edition of the Frontend JavaScript course in HackBulgaria.
                                                     |_|         
 ```
 
-## Materials for prepartion
+## Douglas Crockford
 
+Watch those videos:
+
+* [JavaScript - The Early Years](https://www.youtube.com/watch?v=JxAXlJEmNMg)
+* [And Then There Was JavaScript](https://www.youtube.com/watch?v=RO1Wnu-xKoY)
+* [Function the Ultimate](https://www.youtube.com/watch?v=ya4UHuXNygM)
+## Materials for prepartion
+* [Metamorphosis of AJAX](https://www.youtube.com/watch?v=Fv9qT9joc0M)
+* [The End of All Things](https://www.youtube.com/watch?v=47Ceot8yqeI)
 We strongly recommend that you check the following materials:
 
 * Throughout the course we will use the following book - http://eloquentjavascript.net/
