@@ -8,3 +8,4 @@ Here are some essential materials:
 * [Events in the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events)
 * [More DOM examples](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Examples)
 * [Difference between window, document and screen](http://stackoverflow.com/questions/9895202/what-is-the-difference-between-window-screen-and-document-in-javascript)
+* [Code examples for DOM API](materials/dom.js)
