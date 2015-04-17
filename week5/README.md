@@ -98,3 +98,11 @@ Before we start here is a cheat sheet for jQuery
 	// or at least
 	var container, itemsList, listItem;
 ```
+
+## Conventions, Style Guides etc.
+
+http://contribute.jquery.org/style-guide/js/
+
+https://github.com/airbnb/javascript
+
+https://github.com/yuanyan/pragmatic-jquery
