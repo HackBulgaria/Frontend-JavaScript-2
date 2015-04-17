@@ -80,10 +80,15 @@ var TodoApp = (function() {
   var tasks = [];
   var index = 0;
 
-  // store the reference with the jQuery selectors here
+  // (optional) store the reference with the jQuery selectors here
   var refs = {
     addTask: "input#addTask",
     container: "#container"
+  }
+
+  // (optional) interface for setting the 
+  var setSelectorRefs = function(refs){
+
   }
 
   var addTask = function(taskName) {
