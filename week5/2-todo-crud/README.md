@@ -99,7 +99,7 @@ var TodoApp = (function() {
     // update task
   };
 
-  var displayList = function(container) {
+  var displayList = function() {
     // clear the contents
     // loop through the tasks
     // append each task
