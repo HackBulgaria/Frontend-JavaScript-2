@@ -102,14 +102,14 @@ var TodoApp = (function() {
 
   // public api
   return {
-    createTask: createTask,
-    finishTask: displayList,
+    createTask: addTask,
+    finishTask: finishTask,
     displayList: displayList
   };
 })();
 
 // access via
-TodoApp.createTask("Do the dishes")
+TodoApp.addTask("Do the dishes")
 
 ```
 
