@@ -37,7 +37,7 @@ for more info see week1 1-hello-node
 ├── index.html
 ├── js
 │   ├── app.js  # TodoApp = (fucntion(){...})()
-│   └── todo.js # $(document).ready(...) here
+│   └── init.js # $(document).ready(...) here
 └── lib
     └── jquery  # bower install --save jquery
 ```
