@@ -66,7 +66,7 @@ Before we start here is a cheat sheet for jQuery
 
 ```js
 	// on document ready
-	$( document ).ready(funtion(){
+	$( document ).ready(function(){
 		// init stuff here
 	})
 
