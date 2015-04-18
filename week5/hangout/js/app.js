@@ -30,11 +30,20 @@ var TodoApp = (function() {
 	var removeTask = function(id) {
 		tasks = tasks.filter(function(task, index){
 			return task.id !== id;
-		})	
+		})
+	}
+
+	var moveTask = function(fromIndex, toIndex){
+
+		// get the el and remove it from tasks 
+		var elToMove = tasks.splice(fromIndex, 1)[0];
+		
+		// push it to the new index
+		tasks.splice(toIndex, 0, elToMove);
+
 	}
 
 	var displayList = function() {
-
 
 		var tasksList = $("#tasks-list");
 
@@ -68,8 +77,7 @@ var TodoApp = (function() {
 				chkFinishTask.toggleClass("fa-square-o fa-check-square-o");
 				liTask.addClass("finished");
 			}
-
-			
+		
 			// append contents to li
 			liTask.append(chkFinishTask);
 			liTask.append(task.name);
@@ -87,6 +95,7 @@ var TodoApp = (function() {
 	return {
 		addTask: addTask,
 		finishTask: finishTask,
+		moveTask: moveTask,
 		displayList: displayList
 	};
 })();
