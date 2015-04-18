@@ -27,6 +27,12 @@ var TodoApp = (function() {
 		})
 	};
 
+	var removeTask = function(id) {
+		tasks = tasks.filter(function(task, index){
+			return task.id !== id;
+		})	
+	}
+
 	var displayList = function() {
 
 
@@ -40,27 +46,34 @@ var TodoApp = (function() {
 
 			var taskId = task.id;
 
-			var liTask = $("<li></li>",{
-				id: "task-"+taskId
-			})
+			var liTask = $("<li></li>");
 
-			var chkTaskFinish = $("<input />",{
-				type: "checkbox"
-			});
-
-
-			if(task.finished === true){
-				chkTaskFinish.attr("checked","checked");
-				liTask.addClass("finished");
-			}
-
-			chkTaskFinish.click(function(){
+			// finish task button
+			var chkFinishTask = $("<i>&nbsp;</i>");
+			chkFinishTask.addClass("finishTask fa fa-square-o");
+			chkFinishTask.click(function(){
 				finishTask(taskId);
 				displayList();
 			})
 
-			liTask.append(chkTaskFinish);
+			// remove task button
+			var chkRemoveTask = $("<i>&nbsp;</i>");
+			chkRemoveTask.addClass("removeTask fa fa-trash");
+			chkRemoveTask.click(function(){
+				removeTask(taskId);
+				displayList();
+			})
+
+			if(task.finished === true){
+				chkFinishTask.toggleClass("fa-square-o fa-check-square-o");
+				liTask.addClass("finished");
+			}
+
+			
+			// append contents to li
+			liTask.append(chkFinishTask);
 			liTask.append(task.name);
+			liTask.append(chkRemoveTask);
 
 			// append each task
 			tasksList.append(liTask);
