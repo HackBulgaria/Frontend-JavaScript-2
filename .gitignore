@@ -1,1 +1,4 @@
 README.html
+lib
+node_modules
+public/lib
