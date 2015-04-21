@@ -62,3 +62,43 @@ block content
 ```
 
 ### bootstrap 
+
+## grid system basic example
+```jade
+.container
+  .row
+    .col-xs-12 one huge column
+  .row
+    .col-xs-6 two
+    .col-xs-6 columns
+  .row
+    .col-xs-4 one
+    .col-xs-4 two 
+    .col-xs-4 three
+  .row
+    .col-xs-3 uno
+    .col-xs-3 dos
+    .col-xs-3 tres
+    .col-xs-3 quatro
+  .row
+    .col-xs-2 a
+    .col-xs-2 a
+    .col-xs-2 a
+    .col-xs-2 a
+    .col-xs-2 a
+    .col-xs-2 a
+```
+
+## grid system responsive example
+```jade
+.container
+  .row
+    .col-md-3.col-sm-4.col-xs-12 item 1
+    .col-md-3.col-sm-4.col-xs-12 item 2
+    .col-md-3.col-sm-4.col-xs-12 item 3
+    .col-md-3.col-sm-4.col-xs-12 item 4
+    .col-md-3.col-sm-4.col-xs-12 item 5
+    .col-md-3.col-sm-4.col-xs-12 item 6
+    .col-md-3.col-sm-4.col-xs-12 item 7
+    .col-md-3.col-sm-4.col-xs-12 item 8
+```
