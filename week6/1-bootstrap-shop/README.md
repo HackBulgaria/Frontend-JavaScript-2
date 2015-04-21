@@ -12,7 +12,7 @@ We will need the following screens:
 
 ## Snippets
 
-### jase support for express
+### jade support for express
 
 ```js
 app.set('view engine', 'jade');
@@ -113,4 +113,24 @@ block content
     .col-md-3.col-sm-4.col-xs-12 item 6
     .col-md-3.col-sm-4.col-xs-12 item 7
     .col-md-3.col-sm-4.col-xs-12 item 8
+```
+
+## navbar header example
+```jade
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(data-toggle="collapse",data-target="#my-menu")
+        i.fa.fa-bars
+      a(href="/").navbar-brand Bootstrap Shop
+    
+    .collapse.navbar-collapse#my-menu
+      ul.nav.navbar-nav.navbar-left
+        li: a(href="#")
+          i.fa.fa-star-o &nbsp;
+          | Promos
+      ul.nav.navbar-nav.navbar-right
+        li: a(href="/cart")
+          i.fa.fa-shopping-cart &nbsp;
+          | View Cart
 ```
