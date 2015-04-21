@@ -63,6 +63,18 @@ block content
 
 ### bootstrap 
 
+## hello world example
+
+```jade
+.container
+  h1.text-success 
+    i.fa.fa-child &nbsp;
+    | Hello Bootstrap Shop
+  p.text-warning Some useless text here
+  a.btn.btn-danger Hit me!
+
+```
+
 ## grid system basic example
 ```jade
 .container
