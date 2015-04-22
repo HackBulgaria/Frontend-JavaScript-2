@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 	// init stuff
+	/*
 	$("ul#tasks-list").sortable({
 		start: function(event, ui) {
 			var fromIndex = ui.item.index();
@@ -15,6 +16,7 @@ $(document).ready(function(){
 			TodoApp.displayList();
 		}
 	});
+*/
 
 	$("#new-task-form").submit(function(){
 
@@ -22,16 +24,12 @@ $(document).ready(function(){
 		$("#task-name").val("")
 
 		TodoApp.addTask(taskName);
-		TodoApp.displayList();
 
 		event.preventDefault();
 	})
 
-	// link rest api here
-	// get
-	TodoApp.loadTasks();
+	TodoApp.init();
 
-	// finish -> update ->
 	
 
 })
