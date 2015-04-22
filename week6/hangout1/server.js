@@ -14,6 +14,12 @@ var restMap = require("./data/rest.json");
 // create app
 var app = express()
 
+// connect to db
+var db = mongoose.connect("mongodb://localhost/todo-app");
+
+// load model
+restify.loadModel(restMap, db);
+
 
 // configuration and middleware 
 app.use(express.static('public'));
@@ -30,14 +36,6 @@ app.use(methodOverride());
 app.get('/', function (req, res) {
   res.render('index');
 })
-
-// connect to db
-var db = mongoose.connect("mongodb://localhost/todo-app");
-
-
-// load model
-restify.loadModel(restMap, db);
-
 
 // init routes
 restify.initRoutes(app,restMap,{},db);

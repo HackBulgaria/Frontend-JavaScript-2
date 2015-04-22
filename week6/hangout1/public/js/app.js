@@ -4,33 +4,64 @@ var TodoApp = (function() {
 
 	// private vars
 	var tasks = [];
-	var idIndex = 0;
+
+
+	var loadTasks = function(){
+		// empty the current list
+		tasks = [];
+		// add tasks from api
+		$.get("http://localhost:3000/api/tasks", function(data){
+			tasks = data.list;
+			displayList();
+		})
+	}
 
 	// adds a new task to the collection
 	var addTask = function(taskName) {	
-		idIndex++;
-		
-		tasks.push({
-			name: taskName,
-			id: idIndex,
-			finished: false
-		})
+		$.ajax({
+			url: "/api/tasks/",
+			data: {
+				name: taskName,
+				finished: false
+			},
+			success: function(){
+				loadTasks();
+			},
+			method: "POST"
+		});
 	};
 
 	// updates the task
 	var finishTask = function(id) {
+
+		var finished = false;
 		tasks.forEach(function(task, index){
-			if(task.id === id){
-				task.finished = !task.finished;
+			if(task._id === id){
+				finished = !task.finished;
 				tasks[index] = task;
 			}
 		})
+
+		$.ajax({
+			url: "/api/tasks/"+id,
+			data: {
+				finished: finished
+			},
+			success: function(){
+				loadTasks();
+			},
+			method: "PUT"
+		});
 	};
 
 	var removeTask = function(id) {
-		tasks = tasks.filter(function(task, index){
-			return task.id !== id;
-		})
+		$.ajax({
+			url: "/api/tasks/"+id,
+			success: function(){
+				loadTasks();
+			},
+			method: "DELETE"
+		});
 	}
 
 	var moveTask = function(fromIndex, toIndex){
@@ -53,7 +84,7 @@ var TodoApp = (function() {
 		// loop through the tasks
 		tasks.forEach(function(task){
 
-			var taskId = task.id;
+			var taskId = task._id;
 
 			var liTask = $("<li></li>");
 
@@ -62,7 +93,6 @@ var TodoApp = (function() {
 			chkFinishTask.addClass("finishTask fa fa-square-o");
 			chkFinishTask.click(function(){
 				finishTask(taskId);
-				displayList();
 			})
 
 			// remove task button
@@ -96,6 +126,7 @@ var TodoApp = (function() {
 		addTask: addTask,
 		finishTask: finishTask,
 		moveTask: moveTask,
-		displayList: displayList
+		displayList: displayList,
+		loadTasks: loadTasks
 	};
 })();

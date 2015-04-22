@@ -26,4 +26,12 @@ $(document).ready(function(){
 
 		event.preventDefault();
 	})
+
+	// link rest api here
+	// get
+	TodoApp.loadTasks();
+
+	// finish -> update ->
+	
+
 })
