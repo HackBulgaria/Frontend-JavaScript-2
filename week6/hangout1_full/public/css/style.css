@@ -1,0 +1,46 @@
+
+input#task-name {
+	width: 600px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	padding: 5px;
+}
+
+ul#tasks-list {
+	list-style-type: none;
+	width: 600px;
+	padding-left: 0px;
+}
+
+
+ul#tasks-list li {
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+input#task-name, ul#tasks-list li {
+	border: 1px solid #AAA;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+
+li.finished {
+	text-decoration: line-through;
+}
+
+#tasks-list li i.removeTask, #tasks-list li i.editTask{
+	float: right;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 5px;
+}
+
+#tasks-list li i.finishTask  {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	margin-left: 5px;
+}
