@@ -38,3 +38,7 @@ Recreate 3 site types with 2-3 screens each using bootstrap & SASS
  - buttons -> .btn.btn-success
 
 ## Step 6 Separate the layout from the content
+
+## Step 7 Create the base interface for the other screens
+
+## Step 8 Use SASS to make things look better
