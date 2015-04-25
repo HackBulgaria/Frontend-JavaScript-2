@@ -1,0 +1,28 @@
+
+
+body {
+	background: $funkytown-color-dark;
+	color: $funkytown-color-light;
+	font-family: $funkytown-font-text;
+	> .container-fluid {
+		margin-top: 70px;
+		a {
+			color: $funkytown-color-yellow;
+			&:hover {
+				color: $funkytown-color-red;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+h1, h2, h3, .navbar-brand, .navbar-nav li {
+	font-family: $funkytown-font-heading;
+}
+
+h1, h2, h3 {
+  padding: 0 0 2px;
+  border-bottom: 2px solid $funkytown-color-red;
+  margin: 0 0 13px;
+}
+

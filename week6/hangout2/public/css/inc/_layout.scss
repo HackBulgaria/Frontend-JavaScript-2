@@ -1,0 +1,67 @@
+
+
+/* default layout styles */
+nav.navbar {
+	#my-menu .navbar-nav li a {
+		&:hover {
+			background: darken($funkytown-color-light, 40%);
+			color: lighten($funkytown-color-dark, 10%);
+		}
+	}
+}
+
+
+/* small screens */
+@media only screen and (max-width : 768px) {
+	nav.navbar {
+		background: url(/img/header-bg.jpg) #000 no-repeat center -38px;
+		.navbar-brand {
+			height: 52px;
+			line-height: 52px;
+			padding: 0px 10px;
+		}
+		#my-menu {
+			background: lighten($funkytown-color-dark, 10%);
+		}
+	}
+}
+
+/* big screens */
+@media only screen and (min-width : 768px) {
+	nav.navbar {
+		background: url(/img/header-bg.jpg) #000 no-repeat center -25px;
+		height: 70px;
+		.container-fluid {
+			padding: 0px;
+		}
+		.navbar-header {
+			margin-left: 10px;
+			width: 300px;
+		}
+		.navbar-brand {
+			height: 70px;
+			line-height: 70px;
+			font-size: 24px;
+			margin: 0px;
+			padding: 0px 20px;
+		}
+		#my-menu {
+			padding: 0px;
+			.navbar-nav{
+				margin-top: -10px;
+				padding-left: 10px;
+				background: lighten($funkytown-color-dark, 10%);
+				width: 100%;
+				display: block;
+				height: 40px;
+				li a {
+					height: 40px;
+					line-height: 40px;
+					font-size: 18px;
+					margin: 0px;
+					padding: 0px 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+extends layout
+
+block content
+	.container-fluid#home
+		
+		.row
+			.col-md-6.col-lg-8
+				h2 Welcome to FunkyTOWN Ibiza
+				.carousel.slide#funkytown-slider(data-ride="carousel")
+					ol.carousel-indicators
+						li.active(data-target="#funkytown-slider",data-slide-to="0")
+						li.active(data-target="#funkytown-slider",data-slide-to="1")
+						li.active(data-target="#funkytown-slider",data-slide-to="2")
+					.carousel-inner(role="listbox")
+						.item.active
+							img(data-src="holder.js/1600x700/auto/#777:#555/text:First slide" alt="First slide")
+						.item
+							img(data-src="holder.js/1600x700/auto/#777:#555/text:Second slide" alt="Second slide")
+						.item
+							img(data-src="holder.js/1600x700/auto/#777:#555/text:Third slide" alt="Third slide")
+					a.left.carousel-control(href="#funkytown-slider",data-slide="prev")
+						span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+						span.sr-only Previous
+					a.right.carousel-control(href="#funkytown-slider",data-slide="next")
+						span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+						span.sr-only Next
+			.col-md-6.col-lg-4#upcomming-events
+				h2 Upcomming Events
+				.row.event
+					.col-xs-4
+						img(src="/img/events/event1.jpg")
+					.col-xs-8
+						h4: a(href="#") JazzFM Funky Sensation
+						p Ultra cool event
+				.row.event
+					.col-xs-4
+						img(src="/img/events/event2.jpg")
+					.col-xs-8
+						h4: a(href="#") Funky House & R'N'B
+						p Ultra cool event
+				.row.event
+					.col-xs-4
+						img(src="/img/events/event3.jpg")
+					.col-xs-8
+						h4: a(href="#") Funky Smugglers
+						p Ultra cool event
+
+
+block scripts
+	script(src="http://getbootstrap.com/assets/js/docs.min.js")
+		

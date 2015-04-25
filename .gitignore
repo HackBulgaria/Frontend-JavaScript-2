@@ -2,3 +2,6 @@ README.html
 lib
 node_modules
 public/lib
+style.css.map
+npm-debug.log
+.sass-cache

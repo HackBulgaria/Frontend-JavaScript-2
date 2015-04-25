@@ -1,0 +1,30 @@
+html
+	head
+		title FunkyTOWN Ibiza
+		link(rel="stylesheet",type="text/css",href="/lib/bootstrap/dist/css/bootstrap.css")
+		link(rel="stylesheet",type="text/css",href="/lib/fontawesome/css/font-awesome.css")
+		link(rel="stylesheet",type="text/css",href="/css/style.css")
+	body
+
+		nav.navbar.navbar-inverse
+			.container-fluid
+				.navbar-header
+					button.navbar-toggle.collapsed(data-toggle="collapse",data-target="#my-menu")
+						i.fa.fa-bars
+					a(href="/").navbar-brand FunkyTOWN Ibiza
+
+				.collapse.navbar-collapse#my-menu
+					ul.nav.navbar-nav.navbar-left
+						li: a(href="/events") Events
+						li: a(href="/artists") Artists
+
+		block content
+
+
+
+		//- scripts
+		script(src="/lib/jquery/dist/jquery.min.js")
+		script(src="/lib/bootstrap/dist/js/bootstrap.js")
+
+		block scripts
+		

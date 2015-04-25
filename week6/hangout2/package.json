@@ -1,0 +1,16 @@
+{
+  "name": "2-hobby-site",
+  "version": "1.0.0",
+  "description": "## ULTRA TASK Recreate 3 site types with 2-3 screens each using bootstrap & SASS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2"
+  }
+}
