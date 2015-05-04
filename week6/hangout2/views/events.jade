@@ -1,0 +1,78 @@
+extends layout
+
+block content
+	.container-fluid#events
+		h1 Events
+		.row#events-list
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event1.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event2.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event3.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event1.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event1.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event2.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event3.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			.col-xs-12.col-sm-4.col-md-3.col-lg-2
+				.thumbnail
+					span.date 9 JAN
+					img(src="img/events/event1.jpg")
+					.caption
+						h4: a(href="#") JazzFM Funky Sensation
+						p We know the release date of the brand new album of Riverside - Shrine of New Generation Slaves
+			
+
+block scripts
+	script.
+		function reziseThumbs(){
+			$(".thumbnail > img").each(function(){
+				$(this).height($(this).width()/4*5);
+			})
+		}
+
+		$(document).ready(function(){
+			reziseThumbs();
+			$(window).resize(function(){
+				reziseThumbs();
+			});
+		})

@@ -1,0 +1,30 @@
+{
+	"collections" : {
+		"tasks": {
+			"model": "Task",
+			"schema": {
+				"name" : "String",
+				"finished" : "Boolean"
+			}
+		},
+		"settings": {
+			"model": "Setting",
+			"schema": {
+				"tasksOrder": ["ObjectId"]
+			}
+		}
+	},
+	"routes": {
+		"api" : {
+			"_meta": {
+				"virtual": true,
+				"crud": true,
+				"contentType": "json"
+			},
+			"tasks": {
+			},
+			"settings": {
+			}
+		}
+	}
+}

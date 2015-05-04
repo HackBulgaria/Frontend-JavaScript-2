@@ -36,7 +36,7 @@ The only difference is that the `move(dx, dy, dz)` method should return a new `I
 For example:
 
 ```javascript
-var p2 = ImmutablePoint3d(0, 0, 0);
+var p2 = new ImmutablePoint3d(0, 0, 0);
 
 var result = p2.move(0, 0, -1);
 
@@ -48,5 +48,5 @@ p2.getZ() == 0; // true
 result.getZ() == -1; // true
 
 p2.toString() == "(0, 0, 0)" // true
-result.toString() == "(0, 0, 0)" // true
+result.toString() == "(0, 0, -1)" // true
 ```

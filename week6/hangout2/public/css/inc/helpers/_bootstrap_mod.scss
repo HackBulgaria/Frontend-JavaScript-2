@@ -1,0 +1,32 @@
+.thumbnail {
+	background: inherit;
+	border-radius: 0px;
+	border: 0px;
+	padding: 0px;
+	position: relative;
+	img {
+		width: 100%;
+	}
+	h4 {
+		font-family: $funkytown-font-heading;
+	}
+	p {
+		color: $funkytown-color-text;
+	}
+}
+
+
+/* small screens */
+@media only screen and (max-width : 768px) {
+	.thumbnail {
+		img {
+			width: 30%;
+			display: inline-block;
+		}
+		.caption {
+			width: 70%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
