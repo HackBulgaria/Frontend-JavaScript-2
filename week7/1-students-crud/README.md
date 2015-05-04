@@ -15,3 +15,37 @@ var students = [{
  - The endpoints should be at /api/students instead of /users
 - test the API with the chrome extension [Advanced REST Client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
 - Finally build a front-end client using what we've learned with jQuery
+
+
+## Cheat sheets
+
+### Get index by id
+```js
+function getIndexById(collection, id){
+	var docIndex = -1;
+	collection.forEach(function(item, index){
+		if(item["id"] === id){
+			docIndex = index;
+		}
+	})
+	return docIndex;
+}
+```
+
+### jQuery API Calls
+```js
+// do get request with $.get
+$.get("/api/students/",function(students){
+
+})
+// post, put & delete via
+$.ajax({
+	url: "/api/students/1", // api endpoint
+	method: "put",			// method
+	data: {					// data to send
+		name: "Pesho",
+	},
+	dataType: "json"		// data type
+}).done(function(result){
+
+})
