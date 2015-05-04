@@ -2,8 +2,10 @@
 
 ## Premise
 Create an app that allows you to create, read, update, delete users in a collection.
-- starts with a menu with actions
-- stores data in a global variable users of type collection
+- displays a menu with different CRUD actions
+- prompts for an action 
+- each action either displays a result (List users) or prompts for additional information (Add User)
+- the data is stored in a global variable users of type collection (dictionary in array)
 ```js
 var users = [{
 	id: 1, name: "Pesho", email: "pesho@gmail.com"
@@ -65,12 +67,19 @@ node console-crud.js
 | 7. Load users   |
 | 8. Save users   |
 |=================|
-> action: 1
+> action: _
 
+# Search users
+> action: 6
+Search users:
+> keyword: sho
+Results: 2
 |===============================|
 | ID | Name     | Email         |
 |===============================|
 | 1  | Pesho    | pesho@gmail   |
 | 2  | Gosho    | gosho@gmail   |
 |===============================|
+
+#
 ```
