@@ -9,7 +9,7 @@ We will
 var students = [{
 	id: 1,
 	name: "Pesho",
-	email: Gosho
+	email: "pesho@abv.bg"
 }]
 ```
  - The endpoints should be at /api/students instead of /users
