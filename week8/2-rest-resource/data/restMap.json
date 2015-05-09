@@ -1,0 +1,24 @@
+{
+	"collections" : {
+		"students": {
+			"model": "Student",
+			"schema": {
+				"name" : "String",
+				"email" : "String",
+				"gitRepo" : "String",
+				"hobbyProject" : "String"
+			}
+		}
+	},
+	"routes": {
+		"api" : {
+			"_meta": {
+				"virtual": true,
+				"crud": true,
+				"contentType": "json"
+			},
+			"students": {
+			}
+		}
+	}
+}
