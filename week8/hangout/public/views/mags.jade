@@ -1,0 +1,34 @@
+h4 Magazines
+
+.row
+	.col-sm-4
+		form.well#mags-form
+			.form-group
+				label Name
+				input.form-control(name="name",type="text")
+			.form-group
+				label Volume
+				input.form-control(name="vol",type="number")
+			.form-group
+				label Price
+				input.form-control(name="price",type="number")
+			button.btn.btn-primary(type="submit") Save
+			button.btn.btn-default Reset
+
+	.col-sm-8
+		table.table
+			thead: tr
+				th Name
+				th Vol
+				th Price
+				th Actions
+			tbody
+				each mag in mags
+					tr
+						td= mag.name
+						td= mag.vol
+						td= mag.price
+						td
+							a.btn.btn-primary edit
+							| &nbsp; 
+							a.btn.btn-danger delete

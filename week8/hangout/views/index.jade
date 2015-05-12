@@ -1,0 +1,32 @@
+html
+	head
+		title Resource Test
+		link(rel="stylesheet",href="lib/bootstrap/dist/css/bootstrap.css")
+	body
+
+
+		.container
+
+			h1 Ultra Cool Publisher
+			ul.nav.nav-tabs.nav-pills
+				li.active: a(href="#mags", data-toggle="tab") Magazines
+				li: a(href="#users", data-toggle="tab") Users
+				li: a(href="#subs", data-toggle="tab") Subscriptions
+
+			.tab-content
+				.active.tab-pane#mags
+
+				.tab-pane#users
+					
+				.tab-pane#subs
+					
+					
+
+		script(src="lib/jquery/dist/jquery.js")
+		script(src="lib/q/q.js")
+		script(src="lib/bootstrap/dist/js/bootstrap.js")
+		script(src="lib/jade/jade.js")
+		//- app files
+		script(src="js/resource.js")
+		script(src="js/init.js")
+

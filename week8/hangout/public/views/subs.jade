@@ -1,0 +1,29 @@
+h4 Subscriptions
+
+.row
+	.col-sm-4
+		form.well#subs-form
+			.form-group
+				label Magazine
+				input.form-control(name="magId",type="text")
+			.form-group
+				label User
+				input.form-control(name="userId",type="text")
+			.form-group
+				label Months
+				input.form-control(name="months",type="number")
+			button.btn.btn-primary(type="submit") Save
+			button.btn.btn-default Reset
+
+	.col-sm-8
+		table.table
+			thead: tr
+				th Mag
+				th User
+				th Months
+			tbody
+				each sub in subs
+					tr
+						td= sub.magId
+						td= sub.userId
+						td= sub.months

@@ -1,0 +1,24 @@
+h4 Users
+
+.row
+	.col-sm-4
+		form.well#users-form
+			.form-group
+				label Magazine
+				input.form-control(name="name",type="text")
+			.form-group
+				label User
+				input.form-control(name="email",type="text")
+			button.btn.btn-primary(type="submit") Save
+			button.btn.btn-default Reset
+
+	.col-sm-8
+		table.table
+			thead: tr
+				th Name
+				th Email
+			tbody
+				each user in users
+					tr
+						td= user.name
+						td= user.email

@@ -1,0 +1,20 @@
+{
+  "name": "week8-subsciptions",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "iblokz-node-restify": "git://github.com/iblokz/node-restify",
+    "jade": "^1.9.2",
+    "method-override": "^2.3.2",
+    "mongoose": "^4.0.2"
+  }
+}

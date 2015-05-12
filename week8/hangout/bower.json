@@ -1,0 +1,21 @@
+{
+  "name": "week8-subsciptions",
+  "version": "0.1.0",
+  "authors": [
+    "Alex Milanov <alex@i4web.biz>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "q": "1.x",
+    "bootstrap": "~3.3.4",
+    "jade": "~1.9.2"
+  }
+}
